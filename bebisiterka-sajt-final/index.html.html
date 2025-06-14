@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+
+    <meta name="description" content="Bebisiterka Vranje - čuvanje dece, pomoć u kući i domaći specijaliteti. Pozovite 064/272-9841.">
+    <meta name="keywords" content="bebisiterka vranje, čuvanje dece vranje, pomoć u kući vranje, domaći specijaliteti vranje">
+    <meta name="author" content="Bebisiterka Vranje Plus">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph za društvene mreže -->
+    <meta property="og:title" content="Bebisiterka Vranje - Pouzdano Čuvanje Dece i Pomoć u Kući">
+    <meta property="og:description" content="Iskusna bebisiterka u Vranju - čuvanje dece, pomoć u kući i domaći specijaliteti. Pozovite 064/272-9841.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="sr_RS">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebisiterka Vranje Plus - Vaša Pouzdana Podrška za Dom i Dete</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #ffeef8 0%, #f0f8ff 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 20px rgba(255, 107, 157, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            background: linear-gradient(45deg, #fff, #ffeef8, #fff, #ffb6c1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+            filter: drop-shadow(0 2px 6px rgba(255,255,255,0.4));
+            line-height: 1.1;
+            margin-bottom: 0.2rem;
+        }
+
+        .logo-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            background: linear-gradient(45deg, #fff, #ffeef8, #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+            filter: drop-shadow(0 1px 4px rgba(255,255,255,0.3));
+            margin-top: -0.3rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(255,182,193,0.8), rgba(255,240,245,0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="200" cy="200" r="50" fill="%23ffb6c1" opacity="0.3"/><circle cx="800" cy="300" r="30" fill="%23ffc0cb" opacity="0.4"/><circle cx="300" cy="700" r="40" fill="%23ffb6c1" opacity="0.3"/><circle cx="700" cy="800" r="35" fill="%23ffc0cb" opacity="0.4"/></svg>');
+            padding: 4rem 0;
+            text-align: center;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #c44569;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            animation: slideInDown 1s ease-out 0.2s both;
+        }
+
+        @keyframes slideInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: #666;
+            animation: slideInUp 1s ease-out 0.4s both;
+        }
+
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 107, 157, 0.6);
+        }
+
+        .services {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #c44569;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .photo-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 200px;
+            background: linear-gradient(135deg, #ffeef8, #f0f8ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ff6b9d;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .photo-item:hover {
+            transform: scale(1.05);
+            border-color: #c44569;
+            box-shadow: 0 8px 25px rgba(255, 107, 157, 0.3);
+        }
+
+        .photo-placeholder {
+            text-align: center;
+            color: #c44569;
+            font-size: 0.9rem;
+        }
+
+        .sparkle {
+            position: absolute;
+            color: #ff6b9d;
+            font-size: 1.5rem;
+            animation: sparkle 2s infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #fff 0%, #ffeef8 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255, 107, 157, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 107, 157, 0.1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(255, 107, 157, 0.2);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #c44569;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .about {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #ffeef8 0%, #f8f9ff 100%);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .about-image {
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            height: 400px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(255, 107, 157, 0.3);
+        }
+
+        .specialties {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .specialties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .specialty-item {
+            background: linear-gradient(135deg, #fff5f8 0%, #fff 100%);
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #ffeef8;
+            transition: all 0.3s ease;
+        }
+
+        .specialty-item:hover {
+            border-color: #ff6b9d;
+            transform: scale(1.05);
+        }
+
+        .specialty-item h4 {
+            color: #c44569;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .contact {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #c44569 0%, #ff6b9d 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-item h4 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .logo-text {
+                font-size: 2.2rem;
+            }
+            
+            .logo-subtitle {
+                font-size: 1.6rem;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        .floating-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 20px;
+            color: rgba(255, 107, 157, 0.1);
+            animation: float 6s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10%, 90% { opacity: 1; }
+            50% { transform: translateY(-100px) rotate(180deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-hearts">
+        <div class="heart" style="left: 10%; animation-delay: 0s;">💕</div>
+        <div class="heart" style="left: 20%; animation-delay: 1s;">🤱</div>
+        <div class="heart" style="left: 30%; animation-delay: 2s;">👶</div>
+        <div class="heart" style="left: 40%; animation-delay: 3s;">💖</div>
+        <div class="heart" style="left: 50%; animation-delay: 4s;">🥧</div>
+        <div class="heart" style="left: 60%; animation-delay: 5s;">🏠</div>
+        <div class="heart" style="left: 70%; animation-delay: 2.5s;">✨</div>
+        <div class="heart" style="left: 80%; animation-delay: 1.5s;">👩‍👧</div>
+        <div class="heart" style="left: 90%; animation-delay: 3.5s;">🥐</div>
+    </div>
+
+    <!-- Dodaj sparkle efekte -->
+    <div class="sparkle" style="top: 20%; left: 15%; animation-delay: 0s;">✨</div>
+    <div class="sparkle" style="top: 30%; right: 20%; animation-delay: 1s;">⭐</div>
+    <div class="sparkle" style="top: 60%; left: 10%; animation-delay: 2s;">💫</div>
+    <div class="sparkle" style="bottom: 30%; right: 15%; animation-delay: 1.5s;">✨</div>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-text">BEBISITERKA</div>
+                    <div class="logo-subtitle">VRANJE PLUS</div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#pocetna">Početna</a></li>
+                        <li><a href="#usluge">Usluge</a></li>
+                        <li><a href="#o-meni">O meni</a></li>
+                        <li><a href="#specijaliteti">Specijaliteti</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="pocetna" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Vaša Pouzdana Podrška 💖</h1>
+                <p>Profesionalno čuvanje dece, pomoć u kući i najukusniji domaći specijaliteti<br>
+                   Samo za mame koje zaslužuju najbolje!</p>
+                <a href="#kontakt" class="cta-button">Kontaktirajte me danas! 📞</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="usluge" class="services">
+        <div class="container">
+            <h2 class="section-title">Moje Usluge</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="service-icon">👶</span>
+                    <h3>Profesionalno Čuvanje Dece</h3>
+                    <p>Pružam sigurno i pažljivo čuvanje vaše dece dok ste na poslu ili imate obaveze. Iskusna sam sa decom svih uzrasta i znam kako da im pružim punu pažnju, ljubav i brigu koju zaslužuju.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🏠</span>
+                    <h3>Pomoć u Kući</h3>
+                    <p>Pomažem zauzetim mamama sa svakodnevnim kućnim poslovima - čišćenje, pranje, peglanje, organizacija. Razumem koliko je važno da imate čist i organizovan dom.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="o-meni" class="about">
+        <div class="container">
+            <h2 class="section-title">O Meni</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Zdravo, ja sam vaša Bebisiterka Vranje Plus! 👋</p>
+                    <p>Posvetila sam svoj život pomaganju mamama i brige o deci. Razumem koliko može biti teško uskladiti sve obaveze - posao, decu, kućne poslove. Tu sam da vam olakšam i da vaš dan učinim lakšim.</p>
+                    <p>Imam dugogodišnje iskustvo u radu sa decom i u kućnim poslovima.</p>
+                </div>
+                <div class="about-image">
+                    <div>
+                        💕<br>
+                        Pouzdana<br>
+                        Iskusna<br>
+                        Pažljiva<br>
+                        Tačna
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="specijaliteti" class="specialties">
+        <div class="container">
+            <h2 class="section-title">Domaći Specijaliteti</h2>
+            <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 2rem;">
+                Sve radim ručno, sa ljubavlju i po tradicionalnim receptima 👩‍🍳
+            </p>
+            
+            <div class="photo-gallery">
+                <div class="photo-item" onclick="document.getElementById('photo-upload').click()">
+                    <div class="photo-placeholder">
+                        📸<br>
+                        Kliknite da dodajte<br>
+                        fotografiju
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-placeholder">
+                        🥧<br>
+                        Vaše pite
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-placeholder">
+                        🥐<br>
+                        Vaše kiflice
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-placeholder">
+                        🍞<br>
+                        Vaša peciva
+                    </div>
+                </div>
+            </div>
+            <input type="file" id="photo-upload" accept="image/*" style="display: none;" multiple>
+            <div class="specialties-grid">
+                <div class="specialty-item">
+                    <h4>🍞 Fokače</h4>
+                    <p>Tradicionalne, sa različitim začinima</p>
+                </div>
+                <div class="specialty-item">
+                    <h4>🥧 Ručno Sukane Pite</h4>
+                    <p>Sa sirom, spanać, praziluk i blitva</p>
+                </div>
+                <div class="specialty-item">
+                    <h4>🌽 Proja</h4>
+                    <p>Domaća proja po bakinom receptu</p>
+                </div>
+                <div class="specialty-item">
+                    <h4>🥐 Domaće Kiflice</h4>
+                    <p>Mekane i ukusne, sveže pripremljene</p>
+                </div>
+                <div class="specialty-item">
+                    <h4>🥞 Lisnate Kifle</h4>
+                    <p>Hrskave i slojaste, po tradicionalnom receptu</p>
+                </div>
+                <div class="specialty-item">
+                    <h4>🍞 Posne Kifle</h4>
+                    <p>Za one koji poste ili vole lakšu varijantu</p>
+                </div>
+                <div class="specialty-item">
+                    <h4>🥖 Razna Peciva</h4>
+                    <p>Različiti domaći kolači i peciva za sve prilike</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Kontakt</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Javite se danas i dozvolite mi da vam pomognem! 💕</p>
+            <div class="contact-info">
+                <div class="contact-item" style="grid-column: 1 / -1; max-width: 500px; margin: 0 auto;">
+                    <h4>📱💬 Telefon & Viber</h4>
+                    <p style="font-size: 2rem; font-weight: bold; margin: 1rem 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">064/272-9841</p>
+                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">📞 Pozovite u bilo kom trenutku</p>
+                    <p style="font-size: 1rem;">💬 Viber - brz odgovor garantovan</p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="tel:0642729841" style="background: rgba(255,255,255,0.2); padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; color: white; font-weight: bold; transition: all 0.3s ease; backdrop-filter: blur(10px);">📞 Pozovi</a>
+                        <a href="viber://chat?number=0642729841" style="background: rgba(255,255,255,0.2); padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; color: white; font-weight: bold; transition: all 0.3s ease; backdrop-filter: blur(10px);">💬 Viber</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bebisiterka Vranje Plus - Vaša pouzdana podrška. Napravljeno sa 💕 za mame.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to service cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'slideInUp 0.6s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .specialty-item').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Add floating animation to CTA button on scroll
+        window.addEventListener('scroll', () => {
+            const ctaButton = document.querySelector('.cta-button');
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            
+            if (ctaButton && scrolled < 500) {
+                ctaButton.style.transform = `translateY(${rate}px)`;
+            }
+        });
+
+        // Photo upload functionality
+        document.getElementById('photo-upload').addEventListener('change', function(e) {
+            const files = e.target.files;
+            const gallery = document.querySelector('.photo-gallery');
+            
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                const reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    // Find empty photo slots
+                    const placeholders = document.querySelectorAll('.photo-placeholder');
+                    if (placeholders.length > 1) {
+                        const placeholder = placeholders[1].parentElement;
+                        placeholder.innerHTML = `<img src="${e.target.result}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">`;
+                    }
+                };
+                
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Add hover effects to buttons
+        document.querySelectorAll('a[href^="tel:"], a[href^="viber:"]').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+                this.style.background = 'rgba(255,255,255,0.3)';
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+                this.style.background = 'rgba(255,255,255,0.2)';
+            });
+        });
+    </script>
+</body>
+</html>
